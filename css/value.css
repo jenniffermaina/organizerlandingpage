@@ -1,0 +1,380 @@
+ /*========================================================= ========================================================= ====================================================== */
+
+
+/* =========================================================
+   MADFUN VALUE SECTION
+   CLEAN / BORDERLESS VERSION
+   ========================================================= */
+
+   .madfun-value {
+    position: relative;
+  
+    padding: 64px 0 68px;
+  
+    background: #FFFFFF;
+  
+    color: #101820;
+  }
+  
+  .value-container {
+    width: min(100% - 40px, 1180px);
+    margin: 0 auto;
+  }
+  
+  
+  /* =========================================================
+     HEADER
+     ========================================================= */
+  
+  .value-header {
+    max-width: 700px;
+  
+    margin: 0 auto 46px;
+  
+    text-align: center;
+  }
+  
+  .value-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+  
+    margin-bottom: 10px;
+  
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 900;
+  
+    letter-spacing: .8px;
+  
+    color: #BE5103;
+  }
+  
+  .value-eyebrow::before {
+    content: "";
+  
+    width: 6px;
+    height: 6px;
+  
+    border-radius: 50%;
+  
+    background: #FFD100;
+  }
+  
+  .value-header h2 {
+    margin: 0;
+  
+    font-size: clamp(38px, 3.5vw, 46px);
+    line-height: 1.05;
+    font-weight: 800;
+  
+    letter-spacing: -1.5px;
+  
+    color: #101820;
+  }
+  
+  .value-header h2 span {
+    display: block;
+  
+    color: #BE5103;
+  }
+  
+  .value-header p {
+    max-width: 590px;
+  
+    margin: 14px auto 0;
+  
+    font-size: 16px;
+    line-height: 24px;
+  
+    color: rgba(16, 24, 32, .62);
+  }
+  
+  
+  /* =========================================================
+     GRID
+     ========================================================= */
+  
+  .value-grid {
+    display: grid;
+  
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  
+    gap: 38px 42px;
+  
+    align-items: stretch;
+  }
+  
+  
+  /* =========================================================
+     VALUE ITEM
+     NO CARD BACKGROUND
+     ========================================================= */
+  
+  .value-item {
+    min-width: 0;
+    min-height: 285px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    padding: 0;
+  
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  
+  /* =========================================================
+     ICON
+     NO ICON BACKGROUND
+     ========================================================= */
+  
+  .value-icon-wrap {
+    width: 100%;
+    height: 100px;
+  
+    flex: 0 0 100px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+    margin-bottom: 16px;
+  
+    background: transparent;
+  }
+  
+  .value-icon {
+    width: 88px;
+    height: 88px;
+  
+    display: block;
+  
+    overflow: visible;
+  }
+  
+  
+  /* =========================================================
+     COPY
+     ========================================================= */
+  
+  .value-copy {
+    flex: 1;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .value-item h3 {
+    margin: 0;
+  
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 800;
+  
+    letter-spacing: -.3px;
+  
+    color: #101820;
+  }
+  
+  .value-item p {
+    max-width: 330px;
+  
+    margin: 7px 0 0;
+  
+    font-size: 15px;
+    line-height: 22px;
+  
+    color: rgba(16, 24, 32, .64);
+  }
+  
+  .value-item p strong {
+    font-weight: 800;
+  
+    color: #101820;
+  }
+  
+  
+  /* =========================================================
+     ACCENT DETAIL
+  
+     IMPORTANT:
+     no margin-top:auto because we want this close to body copy
+     ========================================================= */
+  
+  .value-item .value-detail {
+    margin: 7px 0 0;
+    padding: 0;
+  
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 800;
+  
+    color: #BE5103;
+  }
+  
+  
+  /* =========================================================
+     TABLET
+     ========================================================= */
+  
+  @media (max-width: 900px) {
+  
+    .madfun-value {
+      padding: 54px 0 58px;
+    }
+  
+    .value-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+  
+      gap: 38px 34px;
+    }
+  
+    .value-item {
+      min-height: 280px;
+    }
+  
+  }
+  
+  
+  /* =========================================================
+     MOBILE
+     KEEP 2 COLUMNS
+     ========================================================= */
+  
+  @media (max-width: 650px) {
+  
+    .madfun-value {
+      padding: 46px 0 50px;
+    }
+  
+    .value-container {
+      width: calc(100% - 24px);
+    }
+  
+  
+    /* HEADER */
+  
+    .value-header {
+      margin-bottom: 35px;
+    }
+  
+    .value-eyebrow {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  
+    .value-header h2 {
+      font-size: 31px;
+      line-height: 1.06;
+  
+      letter-spacing: -1px;
+    }
+  
+    .value-header p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  
+  
+    /* GRID */
+  
+    .value-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+  
+      gap: 32px 16px;
+    }
+  
+  
+    /* ITEMS */
+  
+    .value-item {
+      min-height: 275px;
+    }
+  
+  
+    /* ICON */
+  
+    .value-icon-wrap {
+      height: 76px;
+      flex-basis: 76px;
+  
+      margin-bottom: 12px;
+    }
+  
+    .value-icon {
+      width: 68px;
+      height: 68px;
+    }
+  
+  
+    /* COPY */
+  
+    .value-item h3 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .value-item p {
+      margin-top: 6px;
+  
+      font-size: 13px;
+      line-height: 18px;
+    }
+  
+    .value-item .value-detail {
+      margin-top: 6px;
+  
+      font-size: 11px;
+      line-height: 15px;
+    }
+  
+  }
+  
+  
+  /* =========================================================
+     VERY SMALL MOBILE
+     ========================================================= */
+  
+  @media (max-width: 390px) {
+  
+    .value-grid {
+      gap: 30px 13px;
+    }
+  
+    .value-item {
+      min-height: 285px;
+    }
+  
+    .value-icon-wrap {
+      height: 70px;
+      flex-basis: 70px;
+    }
+  
+    .value-icon {
+      width: 62px;
+      height: 62px;
+    }
+  
+    .value-item h3 {
+      font-size: 15px;
+      line-height: 19px;
+    }
+  
+    .value-item p {
+      font-size: 12px;
+      line-height: 17px;
+    }
+  
+    .value-item .value-detail {
+      font-size: 11px;
+      line-height: 15px;
+    }
+  
+  }
