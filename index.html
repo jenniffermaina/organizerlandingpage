@@ -1,1110 +1,1721 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width,initial-scale=1"
   >
 
   <meta
     name="description"
-    content="Create, manage and sell tickets for your event with Madfun."
+    content="Sell tickets or plan and deliver your event with Madfun."
   >
 
   <title>Madfun for Organizers</title>
 
-  <link rel="stylesheet" 
-  href="css/navigation.css"
-  href="css/hero.css"
-  href="css/trust.css"
-  href="css/thought.css"
-  href="css/value.css"
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
   >
 
-</head>
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  >
+</head>
 
 <body>
 
+  <!-- ========================================
+       HEADER
+  ========================================= -->
 
-  <!-- =====================================================
-       MADFUN NAVIGATION
-       ===================================================== -->
+  <header class="site-header shell">
 
-  <header class="site-header">
-
-    <div class="nav-container">
-
-
-      <!-- ================= BRAND ================= -->
-
-      <a href="/" class="nav-brand" aria-label="Madfun home">
-
-        <img
-          src="assets/madfun-logo.svg"
-          alt="Madfun"
-          class="nav-logo"
-        >
-
-        <div class="nav-brand-copy">
-
-          <span class="nav-brand-name">
-            Madfun
-          </span>
-
-          <span class="nav-brand-tagline">
-            Events. Watch. Travel.
-          </span>
-
-        </div>
-
-      </a>
-
-
-      <!-- ================= MAIN LINKS ================= -->
-
-      <nav class="nav-links" aria-label="Main navigation">
-
-        <a href="/events">
-          Events
-        </a>
-
-        <a href="/watch">
-          Watch
-        </a>
-
-      </nav>
-
-
-      <!-- ================= SEARCH ================= -->
-
-      <form class="nav-search" role="search">
-
-        <svg
-          class="nav-search-icon"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <circle cx="11" cy="11" r="7"></circle>
-          <path d="M16.5 16.5L21 21"></path>
-        </svg>
-
-        <input
-          type="search"
-          placeholder="Search events, videos..."
-          aria-label="Search events and videos"
-        >
-
-      </form>
-
-
-      <!-- ================= RIGHT ACTIONS ================= -->
-
-      <div class="nav-actions">
-
-
-        <!-- CREATE EVENT -->
-
-        <a
-          href="/create-event"
-          class="nav-create-event"
-        >
-          Create Event
-        </a>
-
-
-        <!-- CART -->
-
-        <a
-          href="/cart"
-          class="nav-icon-button"
-          aria-label="Cart"
-        >
-
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"></path>
-            <circle cx="10" cy="20" r="1"></circle>
-            <circle cx="18" cy="20" r="1"></circle>
-          </svg>
-
-        </a>
-
-
-        <!-- ACCOUNT -->
-
-        <a
-          href="/account"
-          class="nav-account"
-          aria-label="Account"
-        >
-
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <circle cx="12" cy="8" r="4"></circle>
-            <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path>
-          </svg>
-
-        </a>
-
-      </div>
-
-
-      <!-- ================= MOBILE MENU ================= -->
-
-      <button
-        class="nav-menu"
-        type="button"
-        aria-label="Open navigation"
-        aria-expanded="false"
+    <a
+      class="brand"
+      href="#top"
+      aria-label="Madfun organizer home"
+    >
+      <img
+        src="assets/madfun-logo.svg"
+        alt="Madfun"
       >
+    </a>
 
-        <span></span>
-        <span></span>
-        <span></span>
+    <nav
+      class="desktop-nav"
+      aria-label="Main navigation"
+    >
+      <a href="#ticketing">Ticketing</a>
+      <a href="#planning">Planning</a>
+      <a href="#events">Events</a>
+      <a href="#resources">Resources</a>
+    </nav>
 
-      </button>
+    <a
+      class="signin"
+      href="login"
+    >
+      Organizer sign in
+    </a>
 
-
-    </div>
+    <button
+      class="menu-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+      aria-label="Open navigation"
+    >
+      <i></i>
+      <i></i>
+    </button>
 
   </header>
 
 
-  <!-- =====================================================
-       MAIN PAGE
-       ===================================================== -->
+  <nav
+    class="mobile-nav"
+    id="mobile-nav"
+    aria-label="Mobile navigation"
+  >
+    <a href="#ticketing">Ticketing</a>
+    <a href="#planning">Planning</a>
+    <a href="#events">Events</a>
+    <a href="#resources">Resources</a>
+    <a href="login">Organizer sign in</a>
+  </nav>
+
 
   <main>
 
-    <!-- =====================================================
-     ORGANIZER HERO
-     ===================================================== -->
+    <!-- ========================================
+         01 — HERO
+    ========================================= -->
 
-<section class="organizer-hero">
+    <section
+      class="hero"
+      id="top"
+    >
 
-    <!-- DECORATIVE GLOW -->
-    <div class="hero-glow hero-glow-yellow"></div>
-    <div class="hero-glow hero-glow-orange"></div>
-  
-  
-    <div class="hero-container">
-  
-  
-      <!-- ================= HERO COPY ================= -->
-  
-      <div class="hero-copy">
-  
-        <span class="organizer-pill">
-          MADFUN FOR ORGANIZERS
-        </span>
-  
-  
-        <h1>
-          You bring the event.<br>
-          <span>We will help with the ticketing.</span>
-        </h1>
-  
-  
-        <p class="hero-description">
-          Create your event, sell tickets, manage attendees
-          and see how your event is doing all from one place.
-        </p>
-  
-  
-        <div class="hero-actions">
-  
-          <a
-            href="/create-event"
-            class="hero-primary-btn"
-          >
-            Create Your Event
-            <span aria-hidden="true">→</span>
-          </a>
-  
-  
-          <a
-            href="/login"
-            class="hero-signin"
-          >
-            Already an organizer?
-            <strong>Sign in</strong>
-          </a>
-  
-        </div>
-  
-      </div>
-  
-  
-      <!-- ================= HERO VISUAL ================= -->
-  
-      <div class="hero-visual">
-  
-  
-        <!-- EVENT IMAGE -->
-  
-        <div class="hero-event-image">
-  
-          <img
-            src="assets/dashboard.png"
-            alt="A live event powered by Madfun"
-          >
-  
-          <div class="hero-event-badge">
-            <span></span>
-            LIVE EVENTS
-          </div>
-  
-        </div>
-  
-  
-        <!-- ORGANIZER DASHBOARD -->
-  
-        <div class="hero-dashboard">
-  
-          <div class="dashboard-top">
-  
-            <div>
-              <span class="dashboard-label">
-                YOUR EVENT
-              </span>
-  
-              <strong>
-                Event overview
-              </strong>
-            </div>
-  
-            <div class="dashboard-live">
-              LIVE
-            </div>
-  
-          </div>
-  
-  
-          <div class="dashboard-stats">
-  
-            <div class="dashboard-stat">
-  
-              <span>
-                Tickets sold
-              </span>
-  
-              <strong>
-                1,248
-              </strong>
-  
-            </div>
-  
-  
-            <div class="dashboard-stat">
-  
-              <span>
-                Attendees
-              </span>
-  
-              <strong>
-                892
-              </strong>
-  
-            </div>
-  
-          </div>
-  
-  
-          <div class="dashboard-chart">
-  
-            <div class="chart-head">
-  
-              <span>
-                Ticket sales
-              </span>
-  
-              <small>
-                This week
-              </small>
-  
-            </div>
-  
-  
-            <div class="chart-bars">
-  
-              <span style="height:32%"></span>
-              <span style="height:48%"></span>
-              <span style="height:39%"></span>
-              <span style="height:66%"></span>
-              <span style="height:57%"></span>
-              <span style="height:82%"></span>
-              <span class="active" style="height:100%"></span>
-  
-            </div>
-  
-          </div>
-  
-        </div>
-  
-  
-        <!-- FLOATING TICKET -->
-  
-        <div class="hero-ticket">
-  
-          <div class="hero-ticket-icon">
-            ✓
-          </div>
-  
-          <div>
-            <strong>
-              Ticket sold
-            </strong>
-  
+      <div class="hero-grid shell">
+
+        <div class="hero-copy reveal">
+
+          <p class="eyebrow light">
+            Your event starts here
+          </p>
+
+          <h1>
+            Bring the event.
+
             <span>
+              Or just bring us the idea.
+            </span>
+          </h1>
+
+          <p>
+            Already have the event figured out? Put it on Madfun
+            and start selling. Still working from an idea? Our
+            events team can help you plan, produce and deliver
+            the experience.
+          </p>
+
+          <div
+            class="hero-paths"
+            aria-label="Two ways to work with Madfun"
+          >
+            <span>Sell and manage tickets</span>
+            <i></i>
+            <span>Plan and produce the event</span>
+          </div>
+
+        </div>
+
+
+        <div
+          class="hero-collage reveal"
+          aria-label="Madfun ticketing and event production"
+        >
+
+          <figure class="hero-stage">
+
+            <img
+              src="assets/planning/madxperience1.jpg"
+              alt="A live event stage supported by Madfun"
+            >
+
+          </figure>
+
+
+          <div class="hero-dashboard-card">
+
+            <header>
+              <span>Your event</span>
+              <b>● LIVE</b>
+            </header>
+
+            <div>
+              <small>Tickets sold</small>
+
+              <strong data-count="5248">
+                0
+              </strong>
+
+              <em>↑ 18%</em>
+            </div>
+
+            <div
+              class="mini-bars"
+              aria-hidden="true"
+            >
+              <i style="--h:35%"></i>
+              <i style="--h:48%"></i>
+              <i style="--h:42%"></i>
+              <i style="--h:68%"></i>
+              <i style="--h:58%"></i>
+              <i style="--h:90%"></i>
+            </div>
+
+          </div>
+
+
+          <div class="hero-live">
+
+            <b>✓</b>
+
+            <span>
+              <small>Ticket sold</small>
               Just now
             </span>
+
           </div>
-  
+
+
+          <div class="hero-tag">
+            <small>From idea to</small>
+            <strong>EVENT DAY</strong>
+          </div>
+
         </div>
-  
-  
+
       </div>
-  
+
+
+      <div class="hero-footer shell reveal">
+
+        <span>
+          One platform. One events team. Everything working
+          toward event day.
+        </span>
+
+        <a href="#belief">
+          Find your way forward ↓
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         02 — BELIEF
+    ========================================= -->
+
+    <section
+      class="belief section"
+      id="belief"
+    >
+
+      <div class="shell">
+
+        <div class="belief-story">
+
+          <div class="reveal">
+
+            <p class="eyebrow">
+              We have been there on event day
+            </p>
+
+            <h2>
+              We know what it takes to fill the room.
+
+              <span>
+                And make the day work.
+              </span>
+            </h2>
+
+          </div>
+
+
+          <div class="belief-copy reveal">
+
+            <p>
+              A great event may feel effortless to the audience.
+              Behind it are hundreds of decisions, suppliers,
+              deadlines and moving parts.
+            </p>
+
+            <p>
+              Madfun brings the platform, people and on-ground
+              experience together—so you can spend less time
+              chasing details and more time creating a moment
+              people will remember.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="belief-proof reveal">
+
+          <article>
+
+            <strong>
+              <span data-count="900">0</span>
+              <em>+</em>
+            </strong>
+
+            <p>Events hosted</p>
+
+          </article>
+
+
+          <article>
+
+            <strong>
+              <span data-count="300">0</span>
+              <em>K+</em>
+            </strong>
+
+            <p>Tickets issued</p>
+
+          </article>
+
+
+          <aside>
+
+            <small>ONE MADFUN.</small>
+
+            <h3>
+              Technology for the numbers. Experienced people
+              for everything event day demands.
+            </h3>
+
+          </aside>
+
+        </div>
+
+
+        <div class="two-ways reveal">
+
+          <p class="eyebrow">
+            Start from where you are
+          </p>
+
+          <h3>
+            If the plan is ready, we help you sell.
+
+            <span>
+              If it is still an idea, we help you build.
+            </span>
+          </h3>
+
+          <p>
+            Use the platform independently, bring in our events
+            team, or combine both from planning to entry. The
+            support fits the event you are creating.
+          </p>
+
+          <div class="two-way-labels">
+
+            <span>
+              01 · My event is ready to sell
+            </span>
+
+            <i></i>
+
+            <span>
+              02 · I need help bringing it to life
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         TICKETING STORY TRANSITION
+    ========================================= -->
+
+    <div
+      class="marquee marquee-yellow"
+      aria-hidden="true"
+    >
+
+      <div>
+        CREATE THE EVENT
+        <i>•</i>
+        SELL THE TICKETS
+        <i>•</i>
+        FILL THE ROOM
+        <i>•</i>
+        WELCOME THEM IN
+        <i>•</i>
+
+        CREATE THE EVENT
+        <i>•</i>
+        SELL THE TICKETS
+        <i>•</i>
+        FILL THE ROOM
+        <i>•</i>
+        WELCOME THEM IN
+        <i>•</i>
+      </div>
+
     </div>
-  
-  </section>
+
+
+    <!-- ========================================
+         03 — TICKETING
+    ========================================= -->
+
+    <section
+      class="ticketing dark-section section"
+      id="ticketing"
+    >
+
+      <div class="shell">
+
+        <div class="chapter reveal">
+
+          <div>
+
+            <p class="eyebrow light">
+              01 · When your event is ready
+            </p>
+
+            <h2>
+              Start filling the room.
+
+              <span>
+                Before event day.
+              </span>
+            </h2>
+
+          </div>
+
+          <p>
+            Create your tickets, start selling and follow every
+            sale from the first booking to the final guest
+            through the gate.
+          </p>
+
+        </div>
+
+
+        <!-- Ticketing numbers -->
+
+        <div class="number-grid">
+
+          <article class="number-card yellow reveal">
+
+            <header>
+              <span>Platform fee</span>
+              <b>01</b>
+            </header>
+
+            <strong>
+              <span
+                data-count="4"
+                data-suffix="%"
+              >
+                0%
+              </span>
+            </strong>
+
+            <div class="number-card-copy">
+
+              <h3>
+                You pay when you make a sale.
+              </h3>
+
+              <p>
+                Madfun deducts a 4% platform fee only when a
+                ticket is sold.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="number-card orange reveal">
+
+            <header>
+              <span>You keep</span>
+              <b>02</b>
+            </header>
+
+            <strong>
+              <span
+                data-count="96"
+                data-suffix="%"
+              >
+                0%
+              </span>
+            </strong>
+
+            <div class="number-card-copy">
+
+              <h3>
+                Keep 96% of every ticket sold.
+              </h3>
+
+              <p>
+                Most of every sale stays with you, before any
+                other applicable charges.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="number-card cream-card reveal">
+
+            <header>
+              <span>Early access</span>
+              <b>03</b>
+            </header>
+
+            <strong class="stacked">
+
+              <small>Up to</small>
+
+              <span
+                data-count="50"
+                data-suffix="%"
+              >
+                0%
+              </span>
+
+            </strong>
+
+            <div class="number-card-copy">
+
+              <h3>
+                Keep preparations moving.
+              </h3>
+
+              <p>
+                Once verified, request up to 50% of eligible
+                earnings before event day—because suppliers
+                cannot always wait.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="number-card stream-card reveal">
+
+            <header>
+              <span>Streaming revenue</span>
+              <b>04</b>
+            </header>
+
+            <strong>
+              <span
+                data-count="50"
+                data-suffix="%"
+              >
+                0%
+              </span>
+            </strong>
+
+            <div class="number-card-copy">
+
+              <h3>
+                Take the experience beyond the venue.
+              </h3>
+
+              <p>
+                Sell online access to a wider audience and keep
+                50% of eligible streaming sales.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- Platform benefits -->
+
+        <div class="ticketing-more reveal">
+
+          <div>
+
+            <p class="eyebrow light">
+              Because a sold ticket is only the beginning
+            </p>
+
+            <h3>
+              Every sale, payment and guest stays connected.
+            </h3>
+
+          </div>
+
+
+          <div class="benefit-list">
+
+            <article>
+
+              <span>01</span>
+
+              <div>
+
+                <h4>Get discovered</h4>
+
+                <p>
+                  Put your event in front of people already looking
+                  for something worth attending through Madfun
+                  channels and weekend-event features.
+                </p>
+
+              </div>
+
+            </article>
+
+
+            <article>
+
+              <span>02</span>
+
+              <div>
+
+                <h4>Validate your way</h4>
+
+                <p>
+                  Scan tickets with your own team, or bring in
+                  trained Madfun validators when you need extra
+                  hands at the gate.
+                </p>
+
+              </div>
+
+            </article>
+
+
+            <article>
+
+              <span>03</span>
+
+              <div>
+
+                <h4>Build your following</h4>
+
+                <p>
+                  Give every event a home under your organizer
+                  brand—and let followers know when the next
+                  experience goes live.
+                </p>
+
+              </div>
+
+            </article>
+
+
+            <article>
+
+              <span>04</span>
+
+              <div>
+
+                <h4>Stay in control</h4>
+
+                <p>
+                  See what has sold, what you have earned, who
+                  can access the event and who has already entered.
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- Dashboard introduction -->
+
+        <div class="dashboard-intro reveal">
+
+          <p class="eyebrow light">
+            Your event, in one clear view
+          </p>
+
+          <div>
+
+            <h3>
+              Know what is happening.
+
+              <span>
+                Without chasing the answers.
+              </span>
+            </h3>
+
+            <p>
+              Follow sales, earnings, staff activity and guest
+              entry from one place—before, during and after
+              event day.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Dashboard -->
+
+        <div
+          class="dashboard reveal"
+          aria-label="Example Madfun organizer dashboard"
+        >
+
+          <aside>
+
+            <b>M</b>
+
+            <nav>
+              <span class="active">Overview</span>
+              <span>Tickets</span>
+              <span>Attendees</span>
+              <span>Staff</span>
+              <span>Payments</span>
+            </nav>
+
+            <small>Organizer account</small>
+
+          </aside>
+
+
+          <div class="dash-main">
+
+            <header>
+
+              <div>
+                <small>LIVE EVENT</small>
+                <h4>Your Event</h4>
+                <p>Saturday, 28 November · Nairobi</p>
+              </div>
+
+              <em>● LIVE</em>
+
+            </header>
+
+
+            <div class="dash-metrics">
+
+              <article class="yellow">
+
+                <small>Tickets sold</small>
+
+                <strong data-count="1248">
+                  0
+                </strong>
+
+                <span>↑ 18% this week</span>
+
+              </article>
+
+
+              <article>
+
+                <small>Gross sales</small>
+
+                <strong
+                  data-count="1.25"
+                  data-decimals="2"
+                  data-prefix="KES "
+                  data-suffix="M"
+                >
+                  KES 0.00M
+                </strong>
+
+                <span>Across all tickets</span>
+
+              </article>
+
+
+              <article>
+
+                <small>Checked in</small>
+
+                <strong data-count="892">
+                  0
+                </strong>
+
+                <span>71% attendance</span>
+
+              </article>
+
+
+              <article class="orange">
+
+                <small>Eligible withdrawal</small>
+
+                <strong
+                  data-count="599"
+                  data-prefix="KES "
+                  data-suffix="K"
+                >
+                  KES 0K
+                </strong>
+
+                <span>Request up to 50%</span>
+
+              </article>
+
+            </div>
+
+
+            <div class="dash-bottom">
+
+              <article class="sales-widget">
+
+                <header>
+
+                  <div>
+                    <small>TICKET SALES</small>
+                    <b>This week</b>
+                  </div>
+
+                  <span>Last 7 days</span>
+
+                </header>
+
+                <div class="chart-bars">
+                  <i style="--h:36%"></i>
+                  <i style="--h:48%"></i>
+                  <i style="--h:42%"></i>
+                  <i style="--h:64%"></i>
+                  <i style="--h:58%"></i>
+                  <i style="--h:88%"></i>
+                  <i style="--h:75%"></i>
+                </div>
+
+              </article>
+
+
+              <article class="activity-widget">
+
+                <small>RECENT ACTIVITY</small>
+
+                <ul>
+
+                  <li>
+                    <b>✓</b>
+
+                    <span>
+                      2 VIP tickets sold
+                      <small>Just now</small>
+                    </span>
+                  </li>
+
+                  <li>
+                    <b>＋</b>
+
+                    <span>
+                      Staff member added
+                      <small>Gate team</small>
+                    </span>
+                  </li>
+
+                  <li>
+                    <b>⌁</b>
+
+                    <span>
+                      Ticket validated
+                      <small>Gate A</small>
+                    </span>
+                  </li>
+
+                </ul>
+
+              </article>
+
+            </div>
+
+          </div>
+
+
+          <div class="dash-label dl-sales">
+            <b>01</b>
+            Follow sales
+          </div>
+
+          <div class="dash-label dl-money">
+            <b>02</b>
+            See earnings
+          </div>
+
+          <div class="dash-label dl-team">
+            <b>03</b>
+            Add staff
+          </div>
+
+          <div class="dash-label dl-entry">
+            <b>04</b>
+            Track entry
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         PLANNING STORY TRANSITION
+    ========================================= -->
+
+    <div
+      class="marquee marquee-orange"
+      aria-hidden="true"
+    >
+
+      <div>
+        FROM THE FIRST IDEA
+        <i>•</i>
+        TO THE MOMENT THE LIGHTS COME ON
+        <i>•</i>
+
+        FROM THE FIRST IDEA
+        <i>•</i>
+        TO THE MOMENT THE LIGHTS COME ON
+        <i>•</i>
+      </div>
+
+    </div>
+
+
+    <!-- ========================================
+         04 — EVENT PLANNING
+    ========================================= -->
+
+    <section
+      class="planning dark-section section"
+      id="planning"
+    >
+
+      <div class="shell">
+
+        <div class="chapter reveal">
+
+          <div>
+
+            <p class="eyebrow light">
+              02 · When you need a team beside you
+            </p>
+
+            <h2>
+              You hold the vision.
+
+              <span>
+                We carry the moving parts.
+              </span>
+            </h2>
+
+          </div>
+
+          <p>
+            Bring us the full brief or the beginning of an idea.
+            We can shape the plan, build the venue and keep
+            everything moving until the final guest is welcomed in.
+          </p>
+
+        </div>
+
+
+        <div class="planning-grid">
+
+          <article class="plan-card yellow reveal">
+
+            <header>
+              <span>01 · Before the event</span>
+              <b>PLAN</b>
+            </header>
+
+            <h3>
+              Give the idea a plan.
+            </h3>
+
+            <ul>
+              <li>Event concept and planning</li>
+              <li>Budget and timeline development</li>
+              <li>Venue and supplier coordination</li>
+              <li>Programme and run sheet</li>
+            </ul>
+
+          </article>
+
+
+          <article class="plan-card orange reveal">
+
+            <header>
+              <span>02 · Build the event</span>
+              <b>PRODUCE</b>
+            </header>
+
+            <h3>
+              Turn the plan into a place.
+            </h3>
+
+            <ul>
+              <li>Stage design and setup</li>
+              <li>Sound and lighting production</li>
+              <li>LED screens and visuals</li>
+              <li>Power and technical support</li>
+            </ul>
+
+          </article>
+
+
+          <article class="plan-card cream-card reveal">
+
+            <header>
+              <span>03 · Run the venue</span>
+              <b>OPERATE</b>
+            </header>
+
+            <h3>
+              Make every moving part work together.
+            </h3>
+
+            <ul>
+              <li>Security and crowd-control barriers</li>
+              <li>Seating, tents and audience flow</li>
+              <li>Parking and traffic coordination</li>
+              <li>Event-day teams and operations</li>
+            </ul>
+
+          </article>
+
+
+          <article class="plan-card ink-card reveal">
+
+            <header>
+              <span>04 · Welcome every guest</span>
+              <b>ARRIVAL</b>
+            </header>
+
+            <h3>
+              Make every guest feel expected.
+            </h3>
+
+            <ul>
+              <li>Ticketing and registration</li>
+              <li>Guest and VIP coordination</li>
+              <li>Ushers and ticket validators</li>
+              <li>Entry and attendance reporting</li>
+            </ul>
+
+          </article>
+
+        </div>
+
+
+        <div class="planning-note reveal">
+
+          <span>✓</span>
+
+          <p>
+            <strong>
+              You do not have to hand over everything.
+            </strong>
+
+            Bring Madfun in for the complete production, or only
+            for the parts that are stretching your team.
+          </p>
+
+          <a href="mailto:events@madfun.com">
+            Talk to our events team ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         05 — EVENT UNIVERSE
+    ========================================= -->
+
+    <section
+      class="universe section"
+      id="formats"
+    >
+
+      <div class="shell universe-head reveal">
+
+        <div>
+
+          <p class="eyebrow">
+            Every reason to gather belongs here
+          </p>
+
+          <h2>
+            Big stage or Private gathering. 
+            <span>
+              Your event belongs here.
+            </span>
+          </h2>
+
+        </div>
+
+        <p>
+          Create one show or an entire series. Host it in person,
+          online or across both. Madfun adapts to the experience
+          you are creating.
+        </p>
+
+      </div>
+
+
+      <div class="word-row left">
+
+        <div>
+          CONCERTS
+          <i>•</i>
+          Kids’ events
+          <i>•</i>
+          WORSHIP
+          <i>•</i>
+          Corporate events
+          <i>•</i>
+          FESTIVALS
+          <i>•</i>
+
+          CONCERTS
+          <i>•</i>
+          Kids’ events
+          <i>•</i>
+          WORSHIP
+          <i>•</i>
+          Corporate events
+          <i>•</i>
+          FESTIVALS
+          <i>•</i>
+        </div>
+
+      </div>
+
+
+      <div class="word-row right">
+
+        <div>
+          Comedy
+          <i>•</i>
+          CONFERENCES
+          <i>•</i>
+          Workshops
+          <i>•</i>
+          SPORTS
+          <i>•</i>
+          Family events
+          <i>•</i>
+
+          Comedy
+          <i>•</i>
+          CONFERENCES
+          <i>•</i>
+          Workshops
+          <i>•</i>
+          SPORTS
+          <i>•</i>
+          Family events
+          <i>•</i>
+        </div>
+
+      </div>
+
+
+      <div class="word-row left slow">
+
+        <div>
+          THEATRE
+          <i>•</i>
+          Brunches
+          <i>•</i>
+          LIVE SHOWS
+          <i>•</i>
+          Community events
+          <i>•</i>
+          Exhibitions
+          <i>•</i>
+
+          THEATRE
+          <i>•</i>
+          Brunches
+          <i>•</i>
+          LIVE SHOWS
+          <i>•</i>
+          Community events
+          <i>•</i>
+          Exhibitions
+          <i>•</i>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         06 — SELECTED WORK
+    ========================================= -->
+
+    <section
+      class="event-proof dark-section section"
+      id="events"
+    >
+
+      <div class="shell">
+
+        <div class="chapter reveal">
+
+          <div>
+
+            <p class="eyebrow light">
+              The moments behind the numbers
+            </p>
+
+            <h2>
+              Real events. Real audiences.
+
+              <span>
+                Work that speaks for itself.
+              </span>
+            </h2>
+
+          </div>
+
+          <p>
+            Some needed ticketing at scale. Others began with an
+            empty venue and an idea. Each one became a real audience,
+            a real stage and a moment worth remembering.
+          </p>
+
+        </div>
+
+
+        <div class="proof-editorial">
+
+          <!-- Featured event -->
+
+          <article class="proof-feature reveal">
+
+            <img
+              src="assets/events/madxperience.jpg"
+              alt="Burna Boy event poster"
+            >
+
+            <div class="proof-feature-copy">
+
+              <span>
+                01 · Ticketing at scale
+              </span>
+
+              <h3>Burna Boy</h3>
+
+              <p>
+                Thousands of fans. One high-demand onsale.
+                Ticketing built to keep moving.
+              </p>
+
+              <strong>
+
+                <span
+                  data-count="50"
+                  data-suffix="K+"
+                >
+                  0K+
+                </span>
+
+                <small>
+                  tickets sold
+                </small>
+
+              </strong>
+
+            </div>
+
+          </article>
+
+
+          <!-- Planning case studies -->
+
+          <div class="proof-stack">
+
+            <article class="proof-story reveal">
+
+              <img
+                src="assets/planning/stanbic2.jpeg"
+                alt="Stanbic Bank event supported by Madfun"
+              >
+
+              <div>
+
+                <span>
+                  Planning · Production · Operations
+                </span>
+
+                <h3>Stanbic Bank</h3>
+
+                <p>
+                  A corporate brief transformed into a complete
+                  experience—planned, produced and ready for
+                  every guest.
+                </p>
+
+              </div>
+
+            </article>
+
+
+            <article class="proof-story reveal">
+
+              <img
+                src="assets/planning/tecno1.jpg"
+                alt="TECNO event supported by Madfun"
+              >
+
+              <div>
+
+                <span>
+                  Setup · Production · Guest experience
+                </span>
+
+                <h3>TECNO</h3>
+
+                <p>
+                  Brand, production and guest experience brought
+                  together in one carefully delivered event.
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- Ticketed event posters -->
+
+          <div class="proof-poster-grid">
+
+            <article class="proof-poster reveal">
+
+              <img
+                src="assets/events/afc_gor.png"
+                alt="AFC Leopards event poster"
+              >
+
+              <div>
+
+                <span>Sports</span>
+
+                <h3>AFC Leopards</h3>
+
+                <strong>
+                  <span
+                    data-count="25"
+                    data-suffix="K+"
+                  >
+                    0K+
+                  </span>
+
+                  tickets
+                </strong>
+
+              </div>
+
+            </article>
+
+
+            <article class="proof-poster reveal">
+
+              <img
+                src="assets/events/cece.jpeg"
+                alt="CeCe Winans event poster"
+              >
+
+              <div>
+
+                <span>Worship</span>
+
+                <h3>CeCe Winans</h3>
+
+                <strong>
+                  <span
+                    data-count="20"
+                    data-suffix="K+"
+                  >
+                    0K+
+                  </span>
+
+                  tickets
+                </strong>
+
+              </div>
+
+            </article>
+
+
+            <article class="proof-poster reveal">
+
+              <img
+                src="assets/events/happy.jpg"
+                alt="Happy Country event poster"
+              >
+
+              <div>
+
+                <span>Music</span>
+
+                <h3>Happy Country</h3>
+
+                <strong>
+                  <span
+                    data-count="15"
+                    data-suffix="K+"
+                  >
+                    0K+
+                  </span>
+
+                  tickets
+                </strong>
+
+              </div>
+
+            </article>
+
+
+            <article class="proof-poster reveal">
+
+              <img
+                src="assets/events/rhema.jpeg"
+                alt="Business Forum event poster"
+              >
+
+              <div>
+
+                <span>Business</span>
+
+                <h3>Business Forum</h3>
+
+                <strong>
+                  <span
+                    data-count="10"
+                    data-suffix="K+"
+                  >
+                    0K+
+                  </span>
+
+                  tickets
+                </strong>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <div class="proof-strip reveal">
+
+            <p>
+
+              <span>
+                More stories we have helped bring to life
+              </span>
+
+              Njugush · Trinity · Vurugu · MadXperience ·
+              Every Brilliant Thing · and hundreds more
+
+            </p>
+
+            <strong>
+
+              <span
+                data-count="900"
+                data-suffix="+"
+              >
+                0+
+              </span>
+
+              <small>
+                events ticketed through Madfun
+              </small>
+
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         07 — RESOURCES
+    ========================================= -->
+
+    <section
+      class="resources section"
+      id="resources"
+    >
+
+      <div class="shell resources-grid">
+
+        <div class="reveal">
+
+          <p class="eyebrow">
+            Plan with confidence
+          </p>
+
+          <h2>
+            Answers
+            <span> 
+                for every stage of your event. 
+            </span>
+          </h2>
+
+          <nav class="resource-links">
+
+            <a href="#">
+              Create your first event
+              <i>↗</i>
+            </a>
+
+            <a href="#">
+              Understand withdrawals
+              <i>↗</i>
+            </a>
+
+            <a href="#">
+              Prepare for ticket validation
+              <i>↗</i>
+            </a>
+
+          </nav>
+
+        </div>
+
+
+        <div class="faq reveal">
+
+          <p class="eyebrow light">
+            Frequently asked
+          </p>
+
+          <details open>
+
+            <summary>
+              How much does Madfun charge?
+              <i></i>
+            </summary>
+
+            <p>
+              A 4% platform fee is deducted from every ticket
+              sold. Any other applicable transaction or service
+              costs are communicated separately.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Can I withdraw before event day?
+              <i></i>
+            </summary>
+
+            <p>
+              Verified organizers may request up to 50% of eligible
+              available earnings, subject to the applicable checks
+              and conditions.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Can my team validate tickets?
+              <i></i>
+            </summary>
+
+            <p>
+              Yes. Use your own team with the Madfun Validator App
+              or request trained Madfun validators at an additional
+              cost.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Can Madfun plan the whole event?
+              <i></i>
+            </summary>
+
+            <p>
+              Yes. Support can cover planning, production, venue
+              operations and guest entry—or only the areas where
+              you need help.
+            </p>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         FINAL STATEMENT
+    ========================================= -->
+
+    <section class="finale">
+
+      <div class="shell reveal">
+
+        <p class="eyebrow">
+          Your audience is waiting
+        </p>
+
+        <h2>
+          Give them something
+
+          <span>
+            worth showing up for.
+          </span>
+        </h2>
+
+        <p>
+          Bring the finished event or bring the first idea.
+          We will help you turn it into something people can
+          discover, attend and remember.
+        </p>
+
+      </div>
+
+    </section>
 
   </main>
 
-  <!-- =====================================================
-     TRUST / PLATFORM PROOF
-     ===================================================== -->
 
-<section class="trust-strip">
+  <!-- ========================================
+       FOOTER
+  ========================================= -->
 
-    <div class="trust-container">
-  
-  
-      <!-- INTRO -->
-  
-      <div class="trust-intro">
-  
-        <span class="trust-kicker">
-          BUILT FOR REAL EVENTS
-        </span>
-  
-        <p>
-          From the first ticket sold to the last guest through the gate.
-        </p>
-  
-      </div>
-  
-  
-      <!-- PROOF -->
-  
-      <div class="trust-proof">
-  
-  
-        <div class="trust-item">
-  
-          <strong>
-            800<span>+</span>
-          </strong>
-  
-          <p>
-            Events hosted
-          </p>
-  
-        </div>
-  
-  
-        <div class="trust-divider"></div>
-  
-  
-        <div class="trust-item">
-  
-          <strong>
-            200K<span>+</span>
-          </strong>
-  
-          <p>
-            Tickets sold
-          </p>
-  
-        </div>
-  
-  
-        <div class="trust-divider"></div>
-  
-  
-        <div class="trust-item trust-item-text">
-  
-          <strong>
-            One place.
-          </strong>
-  
-          <p>
-            To manage your event.
-          </p>
-  
-        </div>
-  
-  
-      </div>
-  
+  <footer class="site-footer">
+
+    <div class="shell">
+
+      <img
+        src="assets/madfun-logo.svg"
+        alt="Madfun"
+      >
+
+      <p>
+        Ticketing and event planning for experiences of every size.
+      </p>
+
+      <span>
+        © <b id="year"></b> Madfun
+      </span>
+
     </div>
-  
-  </section>
 
-  <!-- =====================================================
-     ORGANIZER REALITY / THOUGHT CLOUD
-     ===================================================== -->
+  </footer>
 
-<section class="organizer-reality">
 
-    <div class="reality-container">
-  
-  
-      <!-- ================= SECTION INTRO ================= -->
-  
-      <div class="reality-header">
-  
-        <span class="reality-eyebrow">
-          WE KNOW EVENTS CAN GET BUSY
-        </span>
-  
-        <h2>
-          You already have enough<br>
-          <span>to think about.</span>
-        </h2>
-  
-        <p>
-          Between selling tickets, answering customers and getting ready
-          for event day, the questions start coming fast.
-        </p>
-  
-      </div>
-  
-  
-      <!-- ================= THOUGHT CLOUD ================= -->
-  
-      <div class="thought-stage">
-  
-  
-        <!-- ORGANIZER IMAGE -->
-  
-        <div class="organizer-photo">
-  
-          <img
-            src="assets/organizer.png"
-            alt="Event organizer managing an event"
-          >
-  
-          <div class="organizer-photo-label">
-            EVENT DAY
-          </div>
-  
-        </div>
-  
-  
-        <!-- LEFT THOUGHTS -->
-  
-        <div class="thought thought-1">
-          <span class="thought-dot"></span>
-          How many tickets<br>have we sold?
-        </div>
-  
-  
-        <div class="thought thought-2">
-          Has this customer<br>
-          <strong>paid?</strong>
-        </div>
-  
-  
-        <div class="thought thought-3">
-          Can you resend<br>my ticket?
-        </div>
-  
-  
-        <div class="thought thought-4">
-          How much have<br>
-          <strong>we made?</strong>
-        </div>
-  
-  
-        <!-- RIGHT THOUGHTS -->
-  
-        <div class="thought thought-5">
-          Who has already<br>
-          <strong>checked in?</strong>
-        </div>
-  
-  
-        <div class="thought thought-6">
-          How is the event<br>performing?
-        </div>
-  
-  
-        <div class="thought thought-7">
-          Is this ticket
-          <strong>valid?</strong>
-        </div>
-  
-  
-        <div class="thought thought-8">
-          What sold<br>
-          <strong>the most?</strong>
-        </div>
-  
-  
-        <!-- SMALL DECORATIVE THOUGHT DOTS -->
-  
-        <span class="floating-dot dot-1"></span>
-        <span class="floating-dot dot-2"></span>
-        <span class="floating-dot dot-3"></span>
-        <span class="floating-dot dot-4"></span>
-  
-  
-      </div>
-  
-  
-      <!-- ================= TRANSITION ================= -->
-  
-      <div class="reality-transition">
-  
-        <span class="transition-line"></span>
-  
-        <p>
-          You shouldn't have to chase all these answers.
-        </p>
-  
-        <span class="transition-arrow">
-          ↓
-        </span>
-  
-      </div>
-  
-  
-    </div>
-  
-  </section>
+  <!-- ========================================
+       FLOATING ACTION MENU
+  ========================================= -->
 
-  <section class="madfun-value">
+  <aside
+  class="action-dock"
+  aria-label="Organizer actions"
+>
 
-    <div class="value-container">
-  
-      <!-- HEADER -->
-      <div class="value-header">
-  
-        <span class="value-eyebrow">WHY MADFUN</span>
-  
-        <h2>
-          More than ticketing.
-          <span>Support for the whole event.</span>
-        </h2>
-  
-        <p>
-          Sell tickets, access your earnings, reach more people
-          and get support from planning to event day.
-        </p>
-  
-      </div>
-  
-  
-      <!-- VALUE GRID -->
-      <div class="value-grid">
-  
-  
-        <!-- 01 — SIMPLE TICKETING -->
-        <article class="value-item">
-  
-          <div class="value-icon-wrap">
-            <svg class="value-icon" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-  
-              <path
-                d="M27 38H93V52C86 52 82 56 82 61C82 67 86 71 93 71V84H27V71C34 71 38 67 38 61C38 56 34 52 27 52V38Z"
-                fill="white"
-                stroke="#101820"
-                stroke-width="3"
-                stroke-linejoin="round"
-              />
-  
-              <path
-                d="M68 40V82"
-                stroke="#101820"
-                stroke-width="2"
-                stroke-dasharray="4 4"
-                opacity=".25"
-              />
-  
-              <path
-                d="M39 49H57"
-                stroke="#BE5103"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M39 58H55"
-                stroke="#101820"
-                stroke-width="3"
-                stroke-linecap="round"
-                opacity=".25"
-              />
-  
-              <rect
-                x="75"
-                y="48"
-                width="10"
-                height="10"
-                rx="1"
-                fill="#FFD100"
-              />
-  
-              <rect
-                x="75"
-                y="63"
-                width="10"
-                height="10"
-                rx="1"
-                fill="#101820"
-              />
-  
-            </svg>
-          </div>
-  
-          <div class="value-copy">
-  
-            <h3>Simple ticketing</h3>
-  
-            <p>
-              Sell tickets on Madfun at a
-              <strong>4% ticketing fee</strong>,
-              deducted from your event's ticket sales.
-            </p>
-  
-            <p class="value-detail">
-              You receive 96% of every ticket sold.
-            </p>
-  
-          </div>
-  
-        </article>
-  
-  
-        <!-- 02 — EARLY EARNINGS -->
-        <article class="value-item">
-  
-          <div class="value-icon-wrap">
-            <svg class="value-icon" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-  
-              <rect
-                x="26"
-                y="39"
-                width="69"
-                height="48"
-                rx="12"
-                fill="white"
-                stroke="#101820"
-                stroke-width="3"
-              />
-  
-              <path
-                d="M26 53H95"
-                stroke="#101820"
-                stroke-width="3"
-              />
-  
-              <rect
-                x="69"
-                y="58"
-                width="31"
-                height="19"
-                rx="8"
-                fill="#FFD100"
-                stroke="#101820"
-                stroke-width="3"
-              />
-  
-              <circle
-                cx="79"
-                cy="67.5"
-                r="3"
-                fill="#101820"
-              />
-  
-              <path
-                d="M46 31V46"
-                stroke="#BE5103"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M39 39L46 46L53 39"
-                stroke="#BE5103"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-  
-            </svg>
-          </div>
-  
-          <div class="value-copy">
-  
-            <h3>Access your earnings early</h3>
-  
-            <p>
-              Withdraw <strong>up to 50%</strong> of your available
-              event earnings before event day to help pay suppliers
-              and prepare for your event.
-            </p>
-  
-            <p class="value-detail">
-              Available after organizer verification.
-            </p>
-  
-          </div>
-  
-        </article>
-  
-  
-        <!-- 03 — STREAMING -->
-        <article class="value-item">
-  
-          <div class="value-icon-wrap">
-            <svg class="value-icon" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-  
-              <rect
-                x="22"
-                y="31"
-                width="76"
-                height="57"
-                rx="11"
-                fill="#101820"
-              />
-  
-              <rect
-                x="27"
-                y="36"
-                width="66"
-                height="47"
-                rx="7"
-                fill="white"
-              />
-  
-              <circle
-                cx="60"
-                cy="59"
-                r="15"
-                fill="#FFD100"
-              />
-  
-              <path
-                d="M56 51L68 59L56 67V51Z"
-                fill="#101820"
-              />
-  
-              <rect
-                x="31"
-                y="40"
-                width="20"
-                height="9"
-                rx="4.5"
-                fill="#BE5103"
-              />
-  
-              <circle
-                cx="36"
-                cy="44.5"
-                r="2"
-                fill="white"
-              />
-  
-              <path
-                d="M48 95H72"
-                stroke="#101820"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M60 88V95"
-                stroke="#101820"
-                stroke-width="4"
-              />
-  
-            </svg>
-          </div>
-  
-          <div class="value-copy">
-  
-            <h3>Stream your event</h3>
-  
-            <p>
-              Already livestreaming? Share your stream with Madfun
-              and sell online access alongside your physical event.
-            </p>
-  
-            <p class="value-detail">
-              Streaming sales are shared 50/50.
-            </p>
-  
-          </div>
-  
-        </article>
-  
-  
-        <!-- 04 — VALIDATION -->
-        <article class="value-item">
-  
-          <div class="value-icon-wrap">
-            <svg class="value-icon" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-  
-              <rect
-                x="36"
-                y="19"
-                width="49"
-                height="82"
-                rx="12"
-                fill="white"
-                stroke="#101820"
-                stroke-width="3"
-              />
-  
-              <rect
-                x="43"
-                y="32"
-                width="35"
-                height="39"
-                rx="5"
-                fill="#101820"
-              />
-  
-              <path
-                d="M49 40H56V47"
-                stroke="#FFD100"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M72 40H65V47"
-                stroke="#FFD100"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M49 63H56V56"
-                stroke="#FFD100"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M72 63H65V56"
-                stroke="#FFD100"
-                stroke-width="3"
-                stroke-linecap="round"
-              />
-  
-              <circle
-                cx="60.5"
-                cy="84"
-                r="10"
-                fill="#FFD100"
-              />
-  
-              <path
-                d="M56 84L59 87L65 80"
-                stroke="#101820"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-  
-            </svg>
-          </div>
-  
-          <div class="value-copy">
-  
-            <h3>Validate your way</h3>
-  
-            <p>
-              Use the Madfun Validator App with your own team,
-              or request our validation team for larger events.
-            </p>
-  
-            <p class="value-detail">
-              Madfun validators: KES 3,000 per person.
-            </p>
-  
-          </div>
-  
-        </article>
-  
-  
-        <!-- 05 — DISCOVERY -->
-        <article class="value-item">
-  
-          <div class="value-icon-wrap">
-            <svg class="value-icon" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-  
-              <path
-                d="M30 53L68 37V82L30 66V53Z"
-                fill="#FFD100"
-                stroke="#101820"
-                stroke-width="3"
-                stroke-linejoin="round"
-              />
-  
-              <path
-                d="M68 43L83 48V71L68 77"
-                fill="white"
-                stroke="#101820"
-                stroke-width="3"
-                stroke-linejoin="round"
-              />
-  
-              <path
-                d="M35 68L40 89H54L49 72"
-                fill="white"
-                stroke="#101820"
-                stroke-width="3"
-                stroke-linejoin="round"
-              />
-  
-              <path
-                d="M88 44L96 37"
-                stroke="#BE5103"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M91 58H102"
-                stroke="#BE5103"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M87 73L96 81"
-                stroke="#BE5103"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-            </svg>
-          </div>
-  
-          <div class="value-copy">
-  
-            <h3>Get your event discovered</h3>
-  
-            <p>
-              Get additional visibility through Madfun socials,
-              collaborations and our weekly weekend-events email.
-            </p>
-  
-            <p class="value-detail">
-              Featured placement: KES 1,000 for 24 hours.
-            </p>
-  
-          </div>
-  
-        </article>
-  
-  
-        <!-- 06 — PLANS CHANGE -->
-        <article class="value-item">
-  
-          <div class="value-icon-wrap">
-  
-            <!-- CANCELLED CALENDAR -->
-            <svg class="value-icon" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-  
-              <rect
-                x="27"
-                y="31"
-                width="66"
-                height="62"
-                rx="10"
-                fill="white"
-                stroke="#101820"
-                stroke-width="3"
-              />
-  
-              <path
-                d="M27 49H93"
-                stroke="#101820"
-                stroke-width="3"
-              />
-  
-              <path
-                d="M43 24V38"
-                stroke="#101820"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M77 24V38"
-                stroke="#101820"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-              <circle
-                cx="60"
-                cy="70"
-                r="16"
-                fill="#FFD100" 
-              />
-  
-              <path
-                d="M53 63L67 77"
-                stroke="#BE5103"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-              <path
-                d="M67 63L53 77"
-                stroke="#BE5103"
-                stroke-width="4"
-                stroke-linecap="round"
-              />
-  
-            </svg>
-  
-          </div>
-  
-          <div class="value-copy">
-  
-            <h3>When plans change</h3>
-  
-            <p>
-              If your event is postponed or cancelled, Madfun
-              provides a process for handling eligible customer refunds.
-            </p>
-  
-            <p class="value-detail">
-              Refund terms and transaction costs apply.
-            </p>
-  
-          </div>
-  
-        </article>
-  
-      </div>
-  
-    </div>
-  
-  </section>
+  <div class="dock-menu">
+
+    <a href="create-event">
+
+      <span>
+        <small>TICKETING</small>
+        <b>Sell tickets</b>
+      </span>
+
+      <i aria-hidden="true">→</i>
+
+    </a>
+
+
+    <a href="mailto:events@madfun.com">
+
+      <span>
+        <small>EVENT SUPPORT</small>
+        <b>Plan with us</b>
+      </span>
+
+      <i aria-hidden="true">↗</i>
+
+    </a>
+
+  </div>
+
+</aside>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
